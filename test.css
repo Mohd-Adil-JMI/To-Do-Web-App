@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Ubuntu&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: #CFFFDC;
+}
+.container{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+input[type=text]{
+    min-width: 30vw;
+    max-width: 70vw;
+    height: 48px;
+    font-size: 1.1rem;
+    border-radius: 48px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 8px #086e7d;
+    padding: 16px;
+    background: #93FFD8;
+}
+button{   
+    width: 48px;
+    height: 48px;
+    border: none;
+    box-shadow: 2px 2px 8px #086E7D;
+    margin-left: 12px;
+    border-radius: 48px;
+    font-size: 1.2rem;
+    background: #93FFD8;
+}
+.listcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 8px #086E7D;
+    margin-top: 48px;
+    border-radius: 32px;
+    background: #93FFD8;
+}
+.listitem{
+    max-width: 80%;
+    margin: 12px 12px 12px 0px;
+    text-align: center;
+    list-style-type: none;
+    padding: 8px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.listitem .cross{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    margin-left: 16px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    background: #93FFD8;
+}
+footer{
+    bottom: 12px;
+    font-size: .7rem;
+    text-align: center;
+}
+@media screen and (max-width: 480px) {
+    .listcontainer{width: 90%;}
+  }
